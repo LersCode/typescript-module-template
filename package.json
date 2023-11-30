@@ -16,6 +16,7 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint": "eslint --ignore-path .eslintignore --ext .ts",
     "test": "jest",
+    "check": "npm run format && npm run lint && npm run test",
     "test-build": "npm run format && npm run lint && npm run test && npm run build && node dist/index.js",
     "pack": "npm run test-build && npm pack",
     "publish": "npm run test-build && npm version && npm pack && npm publish",
