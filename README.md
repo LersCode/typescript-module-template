@@ -23,6 +23,12 @@ import { example } from '<module-name>';
 example();
 ```
 
+## Development
+
+### Clone the repository
+
+See here: [Duplicating a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository)
+
 ## License
 
 MIT
