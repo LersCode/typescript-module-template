@@ -22,7 +22,7 @@
     "publish": "npm run test-build && npm version && npm pack && npm publish",
     "preversion": "npm run format && npm run test",
     "version": "npm run build",
-    "postversion": "git push && git push --tags && rm -rf ./dist"
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
