@@ -1,0 +1,22 @@
+name: PR Opened Workflow
+
+on:
+  pull_request:
+    types:
+      - opened
+    branches:
+      - test-action
+
+jobs:
+  pr-opened:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Add your desired steps below this line
+      - name: Run your specific commands
+        run: npm run format \
+             && npm run lint \
+             && npm run format
