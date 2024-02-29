@@ -21,7 +21,7 @@
     "pack": "npm run test-build && npm pack",
     "publish": "npm run test-build && npm version && npm pack && npm publish",
     "preversion": "npm run format && npm run test",
-    "version": "npm run build && git add -A dist",
+    "version": "npm run build",
     "postversion": "git push && git push --tags && rm -rf build/temp"
   },
   "repository": {
